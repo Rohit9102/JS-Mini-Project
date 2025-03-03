@@ -16,11 +16,11 @@ JavaScript - Adding interactivity and logic
 
 📂 Project List
 
-Project Name 1 - [Brief description]
+Project Name 1 - Weather App
 
-Project Name 2 - [Brief description]
+Project Name 2 - To-do List
 
-Project Name 3 - [Brief description]
+Project Name 3 - Quiz App
 
 (More projects will be added soon...)
 
@@ -30,7 +30,7 @@ Each project is self-contained in its own folder. To run a project:
 
 Clone this repository:
 
-git clone https://github.com/Rohit9102/repository-name.git
+git clone https://github.com/Rohit9102/JS-Mini-Project.git
 
 Navigate to the desired project folder.
 
