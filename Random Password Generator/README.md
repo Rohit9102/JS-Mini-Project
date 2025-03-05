@@ -1,10 +1,10 @@
-Random Password Generator ---
+# Random Password Generator ---
 
-Description ---
+## Description ---
 
 This project is a simple Random Password Generator built using HTML, CSS, and JavaScript. It allows users to generate a random password with uppercase letters, lowercase letters, numbers, and symbols. The generated password can be copied to the clipboard with a single click.
 
-Technologies Used ---
+## Technologies Used ---
 
 HTML: Structure of the password generator.
 
@@ -12,7 +12,7 @@ CSS: Styling and layout.
 
 JavaScript: Logic for generating and copying the password.
 
-Features ---
+## Features ---
 
 Generates a random password of fixed length.
 
@@ -22,11 +22,11 @@ Provides a button to copy the password to the clipboard.
 
 Clean and user-friendly UI.
 
-Installation & Usage ---
+## Installation & Usage ---
 
 Clone the repository:
 
-git clone https://github.com/yourusername/random-password-generator.git
+git clone https://github.com/Rohit9102/random-password-generator.git
 
 Open the project folder and run index.html in a browser.
 
@@ -34,9 +34,9 @@ Click the Generate Password button to generate a new password.
 
 Click the Copy button to copy the password to the clipboard.
 
-Code Structure ---
+## Code Structure ---
 
-HTML (index.html)
+## HTML (index.html)
 
 Defines the layout of the password generator.
 
@@ -44,13 +44,13 @@ Contains an input field to display the generated password.
 
 Includes buttons for generating and copying the password.
 
-CSS (style.css)
+## CSS (style.css)
 
 Styles the password generator UI.
 
 Includes responsive design for better user experience.
 
-JavaScript (script.js)
+## JavaScript (script.js)
 
 Generates random passwords using Math.random().
 
@@ -58,7 +58,7 @@ Handles copying the password to the clipboard.
 
 Implements event listeners for user interactions.
 
-How the Code Works ---
+## How the Code Works ---
 
 Password Generation (createPassword())
 
@@ -72,7 +72,7 @@ Selects the password text.
 
 Copies it to the clipboard using document.execCommand('copy').
 
-Improvements & Suggestions ---
+## Improvements & Suggestions ---
 
 Allow users to customize password length.
 
@@ -82,6 +82,6 @@ Improve clipboard functionality using modern navigator.clipboard API.
 
 Enhance mobile responsiveness.
 
-License --- 
+## License --- 
 
 This project is open-source and available under the MIT License.

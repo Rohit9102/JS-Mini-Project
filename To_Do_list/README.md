@@ -1,10 +1,10 @@
-To-Do List App --- 
+# To-Do List App --- 
 
-Description ---
+## Description ---
 
 This is a simple To-Do List web application that allows users to add, check, and remove tasks. The application also saves the task list in the browser's local storage so that tasks persist even after refreshing the page.
 
-Technologies Used ---
+## Technologies Used ---
 
 HTML
 
@@ -12,7 +12,7 @@ CSS
 
 JavaScript
 
-Features ---
+## Features ---
 
 Add tasks to the list.
 
@@ -24,7 +24,7 @@ Stores tasks in local storage for persistence.
 
 How the Code Works ---
 
-HTML
+## HTML
 
 The structure consists of a container div that houses the to-do list.
 
@@ -34,7 +34,7 @@ A button adds tasks to the list.
 
 A list (ul) dynamically displays tasks.
 
-CSS
+## CSS
 
 Provides a gradient background and a centered card layout.
 
@@ -42,7 +42,7 @@ Styles buttons, inputs, and task items.
 
 Uses custom icons for checked and unchecked tasks.
 
-JavaScript
+## JavaScript
 
 addTask(): Adds a new task to the list.
 
@@ -52,7 +52,7 @@ saveData(): Saves tasks to localStorage.
 
 showList(): Loads stored tasks on page load.
 
-Usage ---
+## Usage ---
 
 Open index.html in a browser.
 
@@ -64,7 +64,7 @@ Click on a task to mark it as completed.
 
 Click the delete icon (×) to remove a task.
 
-Notes ---
+## Notes ---
 
 Ensure the style.css and script.js files are properly linked.
 
@@ -72,7 +72,7 @@ The images folder should contain icon.png, checked.png, and unchecked.png for th
 
 No external API keys or sensitive data are used in this project.
 
-Installation & Usage ---
+## Installation & Usage ---
 
 Clone the repository: 
 
