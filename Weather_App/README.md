@@ -1,10 +1,10 @@
-Weather App ---
+# Weather App ---
 
-Overview ---
+## Overview ---
 
 This is a simple Weather App that allows users to check the current weather of any city by entering its name. The app fetches real-time weather data from the OpenWeather API and displays temperature, humidity, wind speed, and weather conditions with relevant icons.
 
-Features ---
+## Features ---
 
 Search for any city to get live weather updates.
 
@@ -14,7 +14,7 @@ Changes weather icons dynamically based on conditions.
 
 Shows an error message if the city is not found.
 
-Technologies Used ---
+## Technologies Used ---
 
 HTML: Structure of the web page.
 
@@ -24,7 +24,7 @@ JavaScript: Fetching weather data and updating the UI dynamically.
 
 OpenWeather API: Provides real-time weather information.
 
-How It Works ---
+## How It Works ---
 
 The user enters a city name in the search box.
 
@@ -36,11 +36,11 @@ If the city is invalid, an error message appears.
 
 The weather icon updates dynamically based on conditions.
 
-Important Notes ---
+## Important Notes ---
 
 API Key Required: You need an API key from OpenWeather to run this app.
 
-How to Use API Key?
+## How to Use API Key?
 
 Replace YOUR_API_KEY_HERE in the JavaScript file.
 
@@ -48,7 +48,7 @@ Get a free API key from: OpenWeather API.
 
 Security Tip: Avoid exposing your API key publicly; use environment variables or a backend proxy if deploying.
 
-Installation & Usage --- 
+## Installation & Usage --- 
 
 Clone the repository:
 

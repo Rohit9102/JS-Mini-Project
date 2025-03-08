@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quote-box">
+        <h2>Quote of the Day</h2>
+
+        <blockquote id="quote">Loading...</blockquote>
+
+        <span id="author">Loading...</span>
+
+        <div>
+            <button onclick="getQuote()">New Quote</button>
+            <button onclick="tweet()"><img src="twitter.png" alt="">Tweet</button>
+        </div>
+    </div>
+
+<script>
+    const quotes = [
+        { text: "The only limit to our realization of tomorrow is our doubts of today.", author: "Franklin D. Roosevelt" },
+        { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+        { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+        { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt" },
+        { text: "Happiness depends upon ourselves.", author: "Aristotle" }
+    ];
+
+    function getQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const randomQuote = quotes[randomIndex];
+
+        document.getElementById("quote").innerHTML = randomQuote.text;
+        document.getElementById("author").innerHTML = `${randomQuote.author}`;
+    }
+
+    // Load a quote on page load
+    getQuote();
+
+    function tweet() {
+        const tweetText = encodeURIComponent(`${quote.innerHTML} — ${author.innerHTML}`);
+        window.open(
+            `https://twitter.com/intent/tweet?text=${tweetText}`,
+            "Tweet Window",
+            "width=600,height=300"
+        );
+    }
+
+</script>
+</body>
+</html>
