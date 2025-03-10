@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="buttons">
+        <button onclick="showToast(successMsg, 'success')">Success</button>
+        <button onclick="showToast(errorMsg, 'error')">Error</button>
+        <button onclick="showToast(invalidMsg, 'invalid')">Invalid</button>
+    </div>
+
+    <div id="toastBox"></div>
+
+<script>
+    let toastBox = document.getElementById('toastBox');
+
+    let successMsg = `Successfully submitted`;
+    let errorMsg = 'Please fix the error!';
+    let invalidMsg = 'Invalid input, check again';
+
+    function showToast(msg, type){
+        let toast = document.createElement('div');
+        toast.classList.add('toast');
+        
+        // Create an icon element
+        let icon = document.createElement('img');
+        icon.classList.add('toast-icon');
+        
+        // Set the icon based on the type
+        if(type === 'success'){
+            icon.src = 'images/success.png';
+            toast.classList.add('success');
+        } else if(type === 'error'){
+            icon.src = 'images/error.png';
+            toast.classList.add('error');
+        } else if(type === 'invalid'){
+            icon.src = 'images/invalid.png';
+            toast.classList.add('invalid');
+        }
+
+        let text = document.createElement('span');
+        text.classList.add('toast-message');
+        text.innerHTML = msg;
+
+        toast.appendChild(icon);
+        toast.appendChild(text);
+
+        toastBox.appendChild(toast);
+
+        setTimeout(() => {
+            toast.remove();
+        }, 5000);
+    }
+</script>
+
+</body>
+</html>
