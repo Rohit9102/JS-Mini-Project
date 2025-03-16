@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+    --text-color: #212121;
+    --icon-bg: rgba(0, 0, 0, 0.1);
+    --icon-color: white;
+}
+
+body.dark-mode {
+    --primary-color: #212121;
+    --secondary-color: #edf2fc;
+    --text-color: white;
+    --icon-bg: rgba(255, 255, 255, 0.2);
+    --icon-color: white;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-color);
+    transition: 0.5s;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 8%;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4321;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1 {
+    font-size: 70px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+span {
+    color: #ff4321;
+}
+
+.info p {
+    line-height: 24px;
+}
+
+.info a {
+    background: var(--secondary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.info a:hover {
+    background: #ff4321;
+}
+
+.img-box {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.img-box img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+    bottom: 40px;
+}
+
+.img-box:hover .main-img {
+    left: 54%;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 30px;
+    margin-left: 8%;
+    position: relative;
+    z-index: 10;
+}
+
+.social-links a {
+    font-size: 30px;
+    color: var(--icon-color);
+    background: var(--icon-bg);
+    padding: 12px;
+    margin: 5px;
+    transition: 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.social-links a:hover {
+    color: #ff4321;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info h1 {
+        font-size: 40px;
+    }
+
+    .info {
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .img-box {
+        width: 80%;
+        right: 10px;
+    }
+}
