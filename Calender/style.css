@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1d0000, #20205b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar {
+    width: 320px;
+    height: 260px;
+    background: #fff;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;  /* Ensures border-radius applies correctly */
+}
+
+.left, .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left {
+    background: #ffffff;
+    color: #000;
+    padding: 10px;
+}
+
+.right {
+    background: #f4351e;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Ensures equal height distribution */
+.left p, .right p {
+    margin: 5px 0;
+}
+
+/* Styling for Date */
+#date {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 90px;
+}
+
+/* Ensure Right Side Text is Properly Sized */
+.right p {
+    font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .calendar {
+        width: 90%;
+        height: 220px;
+    }
+    #date {
+        font-size: 80px;
+    }
+    .left, .right {
+        font-size: 18px;
+    }
+}
