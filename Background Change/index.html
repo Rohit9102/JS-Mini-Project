@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-box">
+            <img src="images/transparent.png" width="100%">
+
+            <div class="img-wrap" id="imgWrap">
+                <img src="images/original.jpg" id="originalImg">
+            </div>
+
+            <span id="line">
+                <img src="images/arrow.png" class="arrow">
+            </span>
+        </div>
+    </div>
+
+    <script>
+        var imgBox = document.querySelector(".img-box");
+        var imgWrap = document.querySelector("#imgWrap");
+        var originalImg = document.querySelector("#originalImg");
+        var line = document.querySelector("#line");
+
+        // Set the original image width dynamically
+        originalImg.style.width = imgBox.offsetWidth + "px";
+
+        var leftSpace = imgBox.offsetLeft;
+
+        imgBox.onmousemove = function(e) {
+            var boxWidth = (e.pageX - leftSpace) + "px";
+
+            // Prevent overflow to the right
+            if (parseInt(boxWidth) > imgBox.offsetWidth) {
+                boxWidth = imgBox.offsetWidth + "px";
+            }
+            if (parseInt(boxWidth) < 0) {
+                boxWidth = "0px";
+            }
+
+            imgWrap.style.width = boxWidth;
+            line.style.left = boxWidth;
+        };
+    </script>
+</body>
+</html>
